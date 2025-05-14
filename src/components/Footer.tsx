@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Mail className="w-5 h-5 mr-2 mt-0.5 text-gray-500" />
                 <a href="mailto:spansa@ieeecalicut.org" className="hover:text-white transition-colors">
-                  spansa@ieeecalicut.org
+                  ieee@cev.ac.in
                 </a>
               </li>
             </ul>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
               />
               <button
                 type="submit"
-                className="bg-blue-700 text-white px-4 py-2 rounded-r-md hover:bg-blue-800 transition-colors"
+                className="bg-red-700 text-white px-4 py-2 rounded-r-md hover:bg-blue-800 transition-colors"
               >
                 Subscribe
               </button>
@@ -86,9 +86,9 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} IEEE SPANSA. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} IEEE SB CEV. All rights reserved.</p>
           <p className="mt-2">
-            Organized by IEEE Student Branch, NIT Calicut
+            Organized by IEEE SB CEV
           </p>
         </div>
       </div>
