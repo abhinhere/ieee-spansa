@@ -3,7 +3,13 @@ import { Calendar, MapPin, Clock } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative pt-20 md:pt-0 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
+    <section
+  id="hero"
+  className="relative pt-20 md:pt-0 text-white"
+  style={{
+    backgroundImage: 'linear-gradient(to bottom right, #E3522D, #CD0500, #B30000)',
+  }}
+>
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-white" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}></div>
       </div>
@@ -12,36 +18,36 @@ const Hero: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
-              IEEE <span className="text-blue-300">SPANSA</span> 2025
+              <span className="text-red-300">SPANSA</span> 2025
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Connecting Innovations & Ideas
+            <p className="text-xl md:text-2xl mb-8 text-red-100">
+              Students Professional Awarness, Networking and Skill Advancement
             </p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 mb-8 animate-fade-in">
             <div className="flex flex-col md:flex-row gap-6">
               <div className="flex items-center">
-                <Calendar className="w-6 h-6 mr-3 text-blue-300" />
+                <Calendar className="w-6 h-6 mr-3 text-red-300" />
                 <div>
-                  <p className="text-sm text-blue-200">Date</p>
-                  <p className="font-medium">March 15-16, 2025</p>
+                  <p className="text-sm text-red-200">Date</p>
+                  <p className="font-medium">June 16, 2025</p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <MapPin className="w-6 h-6 mr-3 text-blue-300" />
+                <MapPin className="w-6 h-6 mr-3 text-red-300" />
                 <div>
-                  <p className="text-sm text-blue-200">Location</p>
-                  <p className="font-medium">NIT Calicut, Kozhikode</p>
+                  <p className="text-sm text-red-200">Location</p>
+                  <p className="font-medium">Kozhikode , Kerala</p>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <Clock className="w-6 h-6 mr-3 text-blue-300" />
+                <Clock className="w-6 h-6 mr-3 text-red-300" />
                 <div>
-                  <p className="text-sm text-blue-200">Duration</p>
-                  <p className="font-medium">2 Days</p>
+                  <p className="text-sm text-red-200">Duration</p>
+                  <p className="font-medium">1 Day</p>
                 </div>
               </div>
             </div>
@@ -50,7 +56,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <a 
               href="#contact" 
-              className="bg-white text-blue-900 hover:bg-blue-50 px-6 py-3 rounded-md font-medium transition-colors text-center"
+              className="bg-white text-red-900 hover:bg-red-50 px-6 py-3 rounded-md font-medium transition-colors text-center"
             >
               Register Now
             </a>

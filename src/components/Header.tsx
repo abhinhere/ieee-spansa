@@ -34,8 +34,8 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center space-x-2">
-            <span className={`font-bold text-2xl ${isScrolled ? 'text-blue-800' : 'text-white'}`}>
-              IEEE Spansa
+            <span className={`font-bold text-2xl ${isScrolled ? 'text-red-600' : 'text-white'}`}>
+              IEEE SB CEV
             </span>
           </a>
 
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`font-medium transition-colors hover:text-blue-500 ${
+                className={`font-medium transition-colors hover:text-red-400 ${
                   isScrolled ? 'text-gray-800' : 'text-white'
                 }`}
               >
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
             ))}
             <a 
               href="#contact"
-              className="bg-blue-700 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-800 transition-colors"
+              className="bg-red-700 text-white px-4 py-2 rounded-md font-medium hover:bg-red-600 transition-colors"
             >
               Register Now
             </a>
@@ -83,7 +83,7 @@ const Header: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="flex items-center text-gray-800 hover:text-blue-700 transition-colors"
+                className="flex items-center text-gray-800 hover:text-red-600 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 <ChevronRight className="w-4 h-4 mr-1" />
@@ -92,7 +92,7 @@ const Header: React.FC = () => {
             ))}
             <a 
               href="#contact"
-              className="bg-blue-700 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-800 transition-colors flex justify-center"
+              className="bg-red-700 text-white px-4 py-2 rounded-md font-medium hover:bg-red-600 transition-colors flex justify-center"
               onClick={() => setIsOpen(false)}
             >
               Register Now
