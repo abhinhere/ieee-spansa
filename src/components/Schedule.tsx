@@ -20,7 +20,7 @@ const Schedule: React.FC = () => {
 
   const schedule: DaySchedule[] = [
     {
-      date: 'March 15, 2025',
+      date: 'March 16, 2025',
       day: 'Day 1',
       events: [
         {
@@ -34,7 +34,7 @@ const Schedule: React.FC = () => {
           id: 2,
           time: '10:00 - 11:00',
           title: 'Opening Ceremony & Keynote',
-          speaker: 'Dr. Amrita Patel',
+          speaker: 'Devang',
           description: 'The Future of AI and Its Impact on Society',
           venue: 'Auditorium'
         },
@@ -54,27 +54,12 @@ const Schedule: React.FC = () => {
         },
         {
           id: 5,
-          time: '13:30 - 15:00',
-          title: 'Workshop: Cloud Security Fundamentals',
-          speaker: 'Priya Sharma',
-          description: 'Hands-on workshop on securing cloud infrastructure',
-          venue: 'Workshop Room A'
-        },
-        {
-          id: 6,
           time: '15:15 - 16:45',
-          title: 'Technical Session: VLSI Design Advances',
-          speaker: 'Prof. Raj Kumar',
-          description: 'Recent advances in VLSI design methodologies and technologies',
+          title: 'Technical Session: Design Advances',
+          speaker: 'Sahaf',
+          description: 'design methodologies and technologies',
           venue: 'Seminar Hall'
         },
-        {
-          id: 7,
-          time: '17:00 - 18:00',
-          title: 'Networking Session',
-          description: 'Connect with peers and speakers over refreshments',
-          venue: 'Exhibition Area'
-        }
       ]
     },
     {
@@ -142,28 +127,10 @@ const Schedule: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Event Schedule</h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
             Two days of inspiring talks, hands-on workshops, and networking opportunities
           </p>
-        </div>
-
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex bg-gray-100 rounded-lg p-1">
-            {schedule.map((day, index) => (
-              <button
-                key={index}
-                className={`${
-                  activeDay === index
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-transparent text-gray-700 hover:text-blue-600'
-                } px-6 py-3 rounded-md font-medium transition-colors`}
-                onClick={() => setActiveDay(index)}
-              >
-                {day.day}
-              </button>
-            ))}
-          </div>
         </div>
 
         <div className="text-center mb-8">
@@ -172,23 +139,23 @@ const Schedule: React.FC = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="relative">
-            <div className="absolute top-0 bottom-0 left-8 md:left-20 w-0.5 bg-blue-200"></div>
+            <div className="absolute top-0 bottom-0 left-8 md:left-20 w-0.5 bg-red-200"></div>
             
             <div className="space-y-8">
               {schedule[activeDay].events.map((event) => (
                 <div key={event.id} className="relative pl-12 md:pl-28">
-                  <div className="absolute left-4 md:left-16 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center -translate-y-1/2 top-8">
+                  <div className="absolute left-4 md:left-16 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center -translate-y-1/2 top-8">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                   
                   <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-100">
                     <div className="flex flex-col md:flex-row justify-between mb-3">
-                      <span className="text-blue-600 font-semibold">{event.time}</span>
+                      <span className="text-red-600 font-semibold">{event.time}</span>
                       <span className="text-gray-500 text-sm">{event.venue}</span>
                     </div>
                     <h4 className="text-xl font-bold text-gray-900 mb-1">{event.title}</h4>
                     {event.speaker && (
-                      <p className="text-blue-700 mb-2">Speaker: {event.speaker}</p>
+                      <p className="text-red-700 mb-2">Speaker: {event.speaker}</p>
                     )}
                     <p className="text-gray-600">{event.description}</p>
                   </div>
@@ -202,7 +169,7 @@ const Schedule: React.FC = () => {
           <p className="text-gray-600 mb-4">The full agenda is subject to minor changes</p>
           <a 
             href="#contact" 
-            className="inline-block bg-blue-700 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-800 transition-colors"
+            className="inline-block bg-red-700 text-white px-6 py-3 rounded-md font-medium hover:bg-red-800 transition-colors"
           >
             Register Now
           </a>

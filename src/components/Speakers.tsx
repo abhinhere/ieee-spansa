@@ -19,11 +19,11 @@ const Speakers: React.FC = () => {
   const speakers: Speaker[] = [
     {
       id: 1,
-      name: 'Dr. Amrita Patel',
-      role: 'AI Research Scientist',
-      company: 'Google DeepMind',
-      bio: 'Leading researcher in the field of artificial intelligence, with focus on reinforcement learning and neural networks.',
-      image: 'https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      name: 'Devang',
+      role: 'Chair',
+      company: 'CEV',
+      bio: 'Im Devang.',
+      image: 'devang.png',
       socials: {
         linkedin: '#',
         twitter: '#',
@@ -32,11 +32,11 @@ const Speakers: React.FC = () => {
     },
     {
       id: 2,
-      name: 'Prof. Raj Kumar',
-      role: 'Professor of Electronics',
-      company: 'IIT Bombay',
-      bio: 'Expert in VLSI design and embedded systems with over 15 years of teaching and research experience.',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      name: 'Sahaf',
+      role: 'ECC',
+      company: 'CEV',
+      bio: 'Sahaf boy yeah',
+      image: 'sahaf.png',
       socials: {
         linkedin: '#',
         website: '#',
@@ -44,51 +44,14 @@ const Speakers: React.FC = () => {
     },
     {
       id: 3,
-      name: 'Sarah Johnson',
-      role: 'CTO',
-      company: 'TechFusion Inc.',
-      bio: 'Pioneering technologist specializing in cloud architecture and sustainable computing solutions.',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      name: 'Devang',
+      role: 'Chair',
+      company: 'CEV.',
+      bio: 'Im Devang .',
+      image: 'devang.png',
       socials: {
         linkedin: '#',
         twitter: '#',
-      }
-    },
-    {
-      id: 4,
-      name: 'Dr. Michael Chen',
-      role: 'Robotics Engineer',
-      company: 'Boston Dynamics',
-      bio: 'Specializes in humanoid robotics and machine learning applications for autonomous systems.',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      socials: {
-        linkedin: '#',
-        twitter: '#',
-        website: '#',
-      }
-    },
-    {
-      id: 5,
-      name: 'Priya Sharma',
-      role: 'Cybersecurity Expert',
-      company: 'SecureNet',
-      bio: 'Renowned security researcher with expertise in network security and ethical hacking.',
-      image: 'https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      socials: {
-        linkedin: '#',
-        twitter: '#',
-      }
-    },
-    {
-      id: 6,
-      name: 'John Williams',
-      role: 'IoT Solutions Architect',
-      company: 'SmartTech Labs',
-      bio: 'Innovator in IoT ecosystem design with a focus on smart cities and sustainable technology.',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      socials: {
-        linkedin: '#',
-        website: '#',
       }
     },
   ];
@@ -98,7 +61,7 @@ const Speakers: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Speakers</h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
             Learn from industry leaders and experts who are shaping the future of technology
           </p>
@@ -116,17 +79,17 @@ const Speakers: React.FC = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{speaker.name}</h3>
-                <p className="text-blue-600 font-medium mb-1">{speaker.role}</p>
+                <p className="text-red-600 font-medium mb-1">{speaker.role}</p>
                 <p className="text-gray-500 text-sm mb-4">{speaker.company}</p>
                 <p className="text-gray-600 text-sm mb-4">{speaker.bio}</p>
                 <div className="flex space-x-3">
                   {speaker.socials.linkedin && (
-                    <a href={speaker.socials.linkedin} className="text-gray-500 hover:text-blue-600 transition-colors">
+                    <a href={speaker.socials.linkedin} className="text-gray-500 hover:text-red-600 transition-colors">
                       <Linkedin className="w-5 h-5" />
                     </a>
                   )}
                   {speaker.socials.twitter && (
-                    <a href={speaker.socials.twitter} className="text-gray-500 hover:text-blue-400 transition-colors">
+                    <a href={speaker.socials.twitter} className="text-gray-500 hover:text-red-400 transition-colors">
                       <Twitter className="w-5 h-5" />
                     </a>
                   )}
@@ -143,12 +106,6 @@ const Speakers: React.FC = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">More speakers to be announced soon!</p>
-          <a 
-            href="#contact" 
-            className="inline-block bg-blue-700 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-800 transition-colors"
-          >
-            Interested in speaking?
-          </a>
         </div>
       </div>
     </section>

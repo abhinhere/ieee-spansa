@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Register for SPANSA</h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
             Secure your spot at IEEE SPANSA 2025. Limited seats available!
           </p>
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                   placeholder="Your name"
                 />
               </div>
@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
                   name="organization"
                   value={formData.organization}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                   placeholder="Your organization"
                 />
               </div>
@@ -92,14 +92,14 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                   placeholder="Any specific requirements or questions"
                 ></textarea>
               </div>
               
               <button
                 type="submit"
-                className="bg-blue-700 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-800 transition-colors flex items-center justify-center w-full"
+                className="bg-red-700 text-white px-6 py-3 rounded-md font-medium hover:bg-red-800 transition-colors flex items-center justify-center w-full"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Submit Registration
@@ -108,37 +108,37 @@ const Contact: React.FC = () => {
           </div>
           
           <div>
-            <div className="bg-blue-800 text-white rounded-xl shadow-md p-8 mb-8">
+            <div className="bg-red-800 text-white rounded-xl shadow-md p-8 mb-8">
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Mail className="w-6 h-6 mr-4 text-blue-300" />
+                  <Mail className="w-6 h-6 mr-4 text-red-300" />
                   <div>
                     <p className="font-medium">Email Us</p>
-                    <a href="mailto:spansa@ieeecalicut.org" className="text-blue-200 hover:text-white transition-colors">
-                      spansa@ieeecalicut.org
+                    <a href="mailto:spansa@ieeecalicut.org" className="text-red-200 hover:text-white transition-colors">
+                      ieee@cev.ac.in
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <Phone className="w-6 h-6 mr-4 text-blue-300" />
+                  <Phone className="w-6 h-6 mr-4 text-red-300" />
                   <div>
                     <p className="font-medium">Call Us</p>
-                    <a href="tel:+919876543210" className="text-blue-200 hover:text-white transition-colors">
-                      +91 9876 543 210
+                    <a href="tel:+91999999999" className="text-red-200 hover:text-white transition-colors">
+                      +91 9999999999
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <MapPin className="w-6 h-6 mr-4 text-blue-300" />
+                  <MapPin className="w-6 h-6 mr-4 text-red-300" />
                   <div>
                     <p className="font-medium">Location</p>
-                    <p className="text-blue-200">
-                      National Institute of Technology<br />
-                      Calicut, Kozhikode<br />
+                    <p className="text-red-200">
+                      College of Enginnering<br />
+                      Vadakara, Kozhikode<br />
                       Kerala, India - 673601
                     </p>
                   </div>
@@ -152,19 +152,19 @@ const Contact: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex justify-between pb-2 border-b border-gray-100">
                   <span className="font-medium">Early Bird Registration</span>
-                  <span className="text-blue-600">Until January 15, 2025</span>
+                  <span className="text-red-600">Until june 02, 2025</span>
                 </div>
                 <div className="flex justify-between pb-2 border-b border-gray-100">
                   <span className="font-medium">Regular Registration</span>
-                  <span className="text-blue-600">Until February 28, 2025</span>
+                  <span className="text-red-600">Until june 10, 2025</span>
                 </div>
                 <div className="flex justify-between pb-2 border-b border-gray-100">
                   <span className="font-medium">Late Registration</span>
-                  <span className="text-blue-600">Until March 10, 2025</span>
+                  <span className="text-red-600">Until June 12, 2025</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium">Event Dates</span>
-                  <span className="text-blue-600">March 15-16, 2025</span>
+                  <span className="text-red-600">March 16, 2025</span>
                 </div>
               </div>
             </div>
